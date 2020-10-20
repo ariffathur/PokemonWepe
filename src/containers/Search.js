@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import SearchInput from "../components/SearchInput";
+import { SearchInput } from "../components";
 
 const Search = (props) => {
   const { navigation } = props;

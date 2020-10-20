@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import SearchIcon from "../components/SearchIcon";
+import { SearchIcon } from "../components";
 
 const Home = (props) => {
   const { navigation } = props;

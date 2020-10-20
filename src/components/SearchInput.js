@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, TextInput, Platform, StyleSheet } from "react-native";
-import SearchIcon from "../components/SearchIcon";
+import { SearchIcon } from "../components";
 
 const SearchInput = (props) => {
   return (
