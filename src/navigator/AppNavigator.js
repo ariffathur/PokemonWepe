@@ -3,7 +3,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../containers/Home";
 import Detail from "../containers/Detail";
-import Search from "../containers/Search";
 
 const Stack = createStackNavigator();
 
@@ -33,11 +32,6 @@ const AppNavigator = () => {
           name="DetailScreen"
           component={Detail}
           options={{ title: "Pokemon Detail" }}
-        />
-        <Stack.Screen
-          name="SearchScreen"
-          component={Search}
-          options={{ title: "Search Pokemon" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

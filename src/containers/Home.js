@@ -7,9 +7,10 @@ import React, {
 import { FlatList, RefreshControl, Text } from "react-native";
 import {
   Container,
-  SearchIcon,
+  FilterIcon,
   PokemonCard,
   LoadingIndicator,
+  EmptyState,
 } from "../components";
 import { connect } from "react-redux";
 
@@ -44,8 +45,8 @@ const Home = (props) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: () => (
-        <SearchIcon
-          onPress={() => navigation.navigate("SearchScreen")}
+        <FilterIcon
+          onPress={() => alert("show filter modal")}
           style={{ paddingRight: 16 }}
         />
       ),
@@ -95,7 +96,7 @@ const Home = (props) => {
           <PokemonCard index={index} item={item} navigation={navigation} />
         )}
         keyExtractor={(item, index) => index}
-        ListEmptyComponent={loading ? null : <Text>Data Kosong</Text>}
+        ListEmptyComponent={loading ? null : <EmptyState />}
         ListFooterComponent={loading ? <LoadingIndicator /> : null}
         onEndReachedThreshold={0.3}
         onEndReached={handleLoadMore}

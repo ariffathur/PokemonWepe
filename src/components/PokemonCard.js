@@ -9,9 +9,15 @@ import { getPokeIdFromURL } from "../transforms/common";
 const PokemonCard = (props) => {
   const { item, index, navigation } = props;
 
+  console.tron.log(item.url);
+
   return (
     <TouchableOpacity
-      onPress={() => navigation.navigate("DetailScreen")}
+      onPress={() =>
+        navigation.navigate("DetailScreen", {
+          pokemonDetailURL: item.url,
+        })
+      }
       style={[
         style.cardContainer,
         style.shadow,

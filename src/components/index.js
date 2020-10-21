@@ -1,15 +1,7 @@
-import SearchIcon from "./SearchIcon";
-import SearchInput from "./SearchInput";
+import FilterIcon from "./FilterIcon";
 import PokemonCard from "./PokemonCard";
 import LoadingIndicator from "./LoadingIndicator";
 import Container from "./Container";
 import EmptyState from "./EmptyState";
 
-export {
-  SearchIcon,
-  SearchInput,
-  PokemonCard,
-  LoadingIndicator,
-  Container,
-  EmptyState,
-};
+export { FilterIcon, PokemonCard, LoadingIndicator, Container, EmptyState };

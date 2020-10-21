@@ -22,6 +22,7 @@ export default {
       if (response.status === 404) {
         alert(`Opps something wrong, error code: ${response.status}`);
         this.updatePokemonList;
+        return false;
       }
     },
   },

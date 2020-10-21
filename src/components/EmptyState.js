@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
-const EmptyState = (props) => {
+const EmptyState = () => {
   return (
     <View
       style={{
@@ -15,7 +15,6 @@ const EmptyState = (props) => {
     </View>
   );
 };
-
 export default EmptyState;
 
 const style = StyleSheet.create({
