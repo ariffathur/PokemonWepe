@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { View, StyleSheet, Image, Text, TouchableOpacity } from "react-native";
 import {
   widthPercentageToDP as wp,
@@ -8,8 +9,6 @@ import { getPokeIdFromURL } from "../transforms/common";
 
 const PokemonCard = (props) => {
   const { item, index, navigation } = props;
-
-  console.tron.log(item.url);
 
   return (
     <TouchableOpacity
@@ -40,6 +39,10 @@ const PokemonCard = (props) => {
       </View>
     </TouchableOpacity>
   );
+};
+
+PokemonCard.propsTypes = {
+  item: PropTypes.object,
 };
 
 export default PokemonCard;

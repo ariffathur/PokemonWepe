@@ -1,12 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  ScrollView,
-  Dimensions,
-} from "react-native";
+import { Text, View, Image, ScrollView, Dimensions } from "react-native";
 import { connect } from "react-redux";
 import { Container } from "../components";
 import { getPokeIdFromURL } from "../transforms/common";

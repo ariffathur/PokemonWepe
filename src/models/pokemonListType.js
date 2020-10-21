@@ -1,25 +1,30 @@
 import { pokemonApiService } from "../services/pokemonApiService";
 export default {
-  state: null,
+  state: {
+    next: null,
+    data: [],
+  },
   reducers: {
-    updatePokemonDetail(state, payload) {
+    updatePokemonListType(state, payload) {
       return { ...state, ...payload };
     },
-    resetPokemonDetail(state) {
-      return (state = null);
+    resetPokemonListType(state) {
+      state.next = null;
+      state.data = [];
+      return state;
     },
   },
   effects: {
-    async getPokemonDetail(payload) {
-      const response = await pokemonApiService.fetchPokemonDetail(payload.url);
+    async getPokemonListType(payload) {
+      const response = await pokemonApiService.fetchPokemonByType(payload.type);
       if (response.status >= 200 && response.status < 300) {
         const data = response.data;
-        this.updatePokemonDetail(data);
+        this.updatePokemonListType({ next: data.next, data: data.pokemon });
         return true;
       }
       if (response.status >= 400 && response.status < 600) {
         alert(`Opps something wrong, error code: ${response.status}`);
-        this.updatePokemonDetail;
+        this.updatePokemonListType;
         return false;
       }
     },
