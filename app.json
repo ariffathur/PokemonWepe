@@ -13,14 +13,15 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Pokemon infinite list with detail and filter by type",
+    "githubUrl": "https://github.com/ariffathur/PokemonWepe",
+    "privacy": "public"
   }
 }
