@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EmptyState /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text />
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#45545B",
+          "fontSize": 14,
+        },
+        Object {
+          "marginTop": 6,
+        },
+      ]
+    }
+  >
+    Data tidak tersedia.
+  </Text>
+</View>
+`;

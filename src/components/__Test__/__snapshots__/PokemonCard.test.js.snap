@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PokemonCard /> renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#FFFF",
+      "borderRadius": 8,
+      "elevation": 2,
+      "height": 333.5,
+      "marginBottom": 12,
+      "opacity": 1,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 1,
+        "width": 0,
+      },
+      "shadowOpacity": 0.2,
+      "shadowRadius": 1.41,
+      "width": 337.5,
+    }
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "uri": "https://pokeres.bastionbot.org/images/pokemon/2.png",
+      }
+    }
+    style={
+      Object {
+        "height": 267,
+        "width": 337.5,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Text
+      numberOfLines={2}
+      style={
+        Object {
+          "color": "#5D6A70",
+          "fontSize": 14,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      bulbasaur
+    </Text>
+  </View>
+</View>
+`;
