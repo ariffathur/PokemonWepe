@@ -19,13 +19,31 @@ npm install -g expo-cli
 ## Install packages
 
 ```bash
-npm i or yarn
+npm i
+```
+
+or
+
+```bash
+yarn
 ```
 
 ## Usage
 
 ```bash
 expo start
+```
+
+## Run Test
+
+```bash
+npm run test
+```
+
+or
+
+```bash
+yarn test
 ```
 
 ## Built with
