@@ -1,4 +1,5 @@
 export function getPokeIdFromURL(url) {
-  const urlSplit = url.split("https://pokeapi.co/api/v2/pokemon/");
-  return urlSplit[1].replace("/", "");
+  let urlSplit = url.split("https://pokeapi.co/api/v2/pokemon/");
+  let pokemonId = urlSplit[1].replace("/", "");
+  return pokemonId;
 }

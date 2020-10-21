@@ -106,7 +106,7 @@ const Home = (props) => {
     }
     if (pokemons?.next) {
       //split the url to get only query string
-      let queryString = pokemons.next.split("?");
+      let queryString = pokemons?.next?.split("?");
 
       await getPokemonList({
         queryString: `?${queryString[1]}`,
