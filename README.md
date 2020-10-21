@@ -8,7 +8,7 @@ Pokemon infinite list with detail and filter by type
 
 ## Prerequisite
 
-Make sure you have installed the [Expo Client](https://expo.io/tools#client) app in your smartphone
+Make sure you have installed the [Expo Client](https://expo.io/tools#client) app in your android phone. **Shared Expo project link is not working on iOS** please refer to publishing limitation in [here](https://docs.expo.io/workflow/publishing/).
 
 Install Expo CLI
 
