@@ -4,14 +4,10 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
+import { getPokeIdFromURL } from "../transforms/common";
 
 const PokemonCard = (props) => {
-  const item = {
-    name: "#1 Bulbasaur",
-    imageURL: "https://pokeres.bastionbot.org/images/pokemon/1.png",
-  };
-
-  const { index, navigation } = props;
+  const { item, index, navigation } = props;
 
   return (
     <TouchableOpacity
@@ -26,7 +22,9 @@ const PokemonCard = (props) => {
         style={style.image}
         resizeMode={"contain"}
         source={{
-          uri: item.imageURL,
+          uri: `https://pokeres.bastionbot.org/images/pokemon/${getPokeIdFromURL(
+            item.url
+          )}.png`,
         }}
       />
       <View style={style.descriptionContainer}>

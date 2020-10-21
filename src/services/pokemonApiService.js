@@ -30,7 +30,19 @@ function fetchPokemonDetail(url) {
     });
 }
 
-export const wecareService = {
+function fetchPokemonByType(type) {
+  return pokedexApiClient
+    .get(`type/${type}/`)
+    .then((response) => {
+      return response;
+    })
+    .catch((error) => {
+      return error.response;
+    });
+}
+
+export const pokemonApiService = {
   fetchPokemonList,
   fetchPokemonDetail,
+  fetchPokemonByType,
 };

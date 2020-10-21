@@ -1,12 +1,25 @@
 import React from "react";
-import { RecoilRoot } from "recoil";
-
+import { Provider } from "react-redux";
+import { init } from "@rematch/core";
+import createLoadingPlugin from "@rematch/loading";
+import Reactotron from "./src/config/Reactotron.config.js";
+import * as models from "./src/models";
 import AppNavigator from "./src/navigator/AppNavigator";
+
+const loading = createLoadingPlugin();
+
+const store = init({
+  models,
+  redux: {
+    enhancers: [Reactotron.createEnhancer()],
+  },
+  plugins: [loading],
+});
 
 export default function App() {
   return (
-    <RecoilRoot>
+    <Provider store={store}>
       <AppNavigator />
-    </RecoilRoot>
+    </Provider>
   );
 }
